@@ -17,8 +17,25 @@
                     <img src="/assets/photos/logo.png" alt="Logo" width="30" height="24"
                         class="d-inline-block align-text-top">
                 </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </nav>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -28,6 +45,43 @@
 </html>
 
 <style>
+    .me-2 {
+        width: 400px;
+        border-color: #61a5c2;    
+    }
+
+    .me-2::placeholder {
+        color: #61a5c2;    
+    }
+
+    .me-2:focus {
+        box-shadow: 0 0 5px 2px #61a5c275;    
+    }
+
+    .btn-outline-success {
+        width: 150px;
+        margin-right: 100px;
+        border-color: transparent;
+        background-color: #61a5c2;
+        color: white;
+        outline: none;
+    }
+
+    .btn-outline-success:hover {
+        background-color: #014f86;
+        color: white;
+    }
+
+    .btn-outline-success:active {
+        background-color: #014f86;
+        color: white;
+    }
+
+    .btn-outline-success.clicked {
+        background-color: #014f86;
+        color: white;
+    }
+
     .container-fluid {
         height: 75px;
         background-color: white;
